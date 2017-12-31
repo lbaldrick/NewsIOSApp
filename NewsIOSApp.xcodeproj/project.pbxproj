@@ -14,6 +14,7 @@
 		A74817EB1FF704CE0086F5B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74817E91FF704CE0086F5B4 /* LaunchScreen.storyboard */; };
 		A74817F61FF704CE0086F5B4 /* NewsIOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74817F51FF704CE0086F5B4 /* NewsIOSAppTests.swift */; };
 		A74818011FF704CE0086F5B4 /* NewsIOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74818001FF704CE0086F5B4 /* NewsIOSAppUITests.swift */; };
+		A74818101FF708790086F5B4 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A748180F1FF708790086F5B4 /* Rest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A74817FC1FF704CE0086F5B4 /* NewsIOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74818001FF704CE0086F5B4 /* NewsIOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsIOSAppUITests.swift; sourceTree = "<group>"; };
 		A74818021FF704CE0086F5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A748180F1FF708790086F5B4 /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		A74817DF1FF704CE0086F5B4 /* NewsIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				A748180E1FF708420086F5B4 /* Clients */,
 				A74817E01FF704CE0086F5B4 /* AppDelegate.swift */,
 				A74817E21FF704CE0086F5B4 /* ViewController.swift */,
 				A74817E41FF704CE0086F5B4 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				A74818021FF704CE0086F5B4 /* Info.plist */,
 			);
 			path = NewsIOSAppUITests;
+			sourceTree = "<group>";
+		};
+		A748180E1FF708420086F5B4 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				A748180F1FF708790086F5B4 /* Rest.swift */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74818101FF708790086F5B4 /* Rest.swift in Sources */,
 				A74817E31FF704CE0086F5B4 /* ViewController.swift in Sources */,
 				A74817E11FF704CE0086F5B4 /* AppDelegate.swift in Sources */,
 			);
