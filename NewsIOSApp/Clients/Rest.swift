@@ -44,8 +44,5 @@ class Rest {
         
         task.resume();
     }
-    
-    static func post(url: String, body: String) {
-        
-    }
+
 }

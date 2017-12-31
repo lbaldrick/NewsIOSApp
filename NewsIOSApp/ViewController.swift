@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var json: Any?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,10 +22,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showMessage(sender: UIButton) {
+    @IBAction func makeRequest(sender: UIButton) {
         Rest.get(url: "http://192.168.0.39:3003/news/all") { (any) in
             print(any!)
+            self.json = any!
         }
+    }
+    
+    @IBAction func showResult(sender: UIButton) {
+        print(self.json!)
     }
 
 
