@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="32.833583208395808"/>
         </scene>
-        <!--Article Table View Controller-->
+        <!--News Articles-->
         <scene sceneID="vfn-c6-aLv">
             <objects>
                 <tableViewController restorationIdentifier="TableViewController" storyboardIdentifier="TableViewController" id="6cq-1i-qGw" customClass="ArticleTableViewController" customModule="NewsIOSApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,14 +64,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-eU-gqX">
-                                            <rect key="frame" x="16" y="46" width="357" height="55"/>
+                                            <rect key="frame" x="16" y="30" width="357" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" text="PublishedAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-mu-4dx">
-                                            <rect key="frame" x="16" y="100" width="357" height="27"/>
+                                            <rect key="frame" x="16" y="87" width="357" height="27"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <accessibility key="accessibilityConfiguration">
                                                 <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -97,6 +97,15 @@
                             <outlet property="delegate" destination="6cq-1i-qGw" id="Yoe-4d-Wr4"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="News Articles" id="5M9-eA-HLt">
+                        <barButtonItem key="rightBarButtonItem" title="Filters" id="ZiU-td-csa">
+                            <connections>
+                                <segue destination="L5j-IN-kDm" kind="show" id="IHa-kQ-zJ1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="GKt-AI-M2W" id="Gnc-AS-JMA"/>
                     </connections>
@@ -104,6 +113,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Kf-b2-bwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1084" y="33.733133433283363"/>
+        </scene>
+        <!--Source Table View Controller-->
+        <scene sceneID="p9w-4M-r5f">
+            <objects>
+                <tableViewController id="L5j-IN-kDm" customClass="SourceTableViewController" customModule="NewsIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xxg-0v-usH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SourceTableViewCell" rowHeight="65" id="u4K-6V-uAc" customClass="SourceTableViewCell" customModule="NewsIOSApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u4K-6V-uAc" id="tDQ-iy-cSw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssj-Pe-QCu">
+                                            <rect key="frame" x="102" y="11" width="197" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7At-Pa-S3G">
+                                            <rect key="frame" x="39" y="6" width="49" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="toogleState:" destination="u4K-6V-uAc" eventType="valueChanged" id="0Re-lx-yWu"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sourceButton" destination="7At-Pa-S3G" id="TGy-JO-0ZV"/>
+                                    <outlet property="sourceLabel" destination="ssj-Pe-QCu" id="8Cr-fT-6EC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L5j-IN-kDm" id="Cnn-kR-kUf"/>
+                            <outlet property="delegate" destination="L5j-IN-kDm" id="lbm-CC-wBu"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ed-VU-7M3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824.8" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2xO-12-6jK">

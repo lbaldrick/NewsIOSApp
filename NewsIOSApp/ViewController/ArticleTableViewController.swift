@@ -49,7 +49,7 @@ class ArticleTableViewController: UITableViewController {
         // Fetches the appropriate article for the data source layout.
         let article = self.articles?[indexPath.row]
         
-        self.tableView.rowHeight = 130
+        self.tableView.rowHeight = 120
 
         cell.titleLabel.text = article?.title
         cell.publishedAtLabel.text = article?.publishedAt

@@ -18,6 +18,12 @@
 		A76C26511FFAC5AE0056DA8F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76C26501FFAC5AE0056DA8F /* Article.swift */; };
 		A76C26531FFAC8B10056DA8F /* ArticleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76C26521FFAC8B10056DA8F /* ArticleModelController.swift */; };
 		A7985DD9200243F300C8B58B /* ArticlesResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7985DD8200243F300C8B58B /* ArticlesResponseDto.swift */; };
+		A7A953F5200516B300B9004A /* SourceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953F4200516B300B9004A /* SourceTableViewController.swift */; };
+		A7A953F7200516CB00B9004A /* SourceModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953F6200516CB00B9004A /* SourceModelController.swift */; };
+		A7A953F9200517D200B9004A /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953F8200517D200B9004A /* Source.swift */; };
+		A7A953FB2005268F00B9004A /* SourceResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953FA2005268F00B9004A /* SourceResponseDto.swift */; };
+		A7A953FD2005269D00B9004A /* SourceDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953FC2005269D00B9004A /* SourceDto.swift */; };
+		A7A953FF2005358400B9004A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A953FE2005358400B9004A /* SourceTableViewCell.swift */; };
 		A7B2ECBA2003D61B006C0A91 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2ECB92003D61B006C0A91 /* ArticleTableViewCell.swift */; };
 		A7B2ECBC2003D73B006C0A91 /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2ECBB2003D73B006C0A91 /* ArticleTableViewController.swift */; };
 		A7BE937C2002A4F90047B200 /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE937B2002A4F90047B200 /* ArticleDto.swift */; };
@@ -58,6 +64,12 @@
 		A76C26501FFAC5AE0056DA8F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		A76C26521FFAC8B10056DA8F /* ArticleModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModelController.swift; sourceTree = "<group>"; };
 		A7985DD8200243F300C8B58B /* ArticlesResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesResponseDto.swift; sourceTree = "<group>"; };
+		A7A953F4200516B300B9004A /* SourceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewController.swift; sourceTree = "<group>"; };
+		A7A953F6200516CB00B9004A /* SourceModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModelController.swift; sourceTree = "<group>"; };
+		A7A953F8200517D200B9004A /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		A7A953FA2005268F00B9004A /* SourceResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceResponseDto.swift; sourceTree = "<group>"; };
+		A7A953FC2005269D00B9004A /* SourceDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDto.swift; sourceTree = "<group>"; };
+		A7A953FE2005358400B9004A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		A7B2ECB92003D61B006C0A91 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		A7B2ECBB2003D73B006C0A91 /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
 		A7BE937B2002A4F90047B200 /* ArticleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDto.swift; sourceTree = "<group>"; };
@@ -156,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				A76C26501FFAC5AE0056DA8F /* Article.swift */,
+				A7A953F8200517D200B9004A /* Source.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				A76C26521FFAC8B10056DA8F /* ArticleModelController.swift */,
+				A7A953F6200516CB00B9004A /* SourceModelController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -173,6 +187,7 @@
 			children = (
 				A74817E21FF704CE0086F5B4 /* MainViewController.swift */,
 				A7B2ECBB2003D73B006C0A91 /* ArticleTableViewController.swift */,
+				A7A953F4200516B300B9004A /* SourceTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -182,6 +197,8 @@
 			children = (
 				A7985DD8200243F300C8B58B /* ArticlesResponseDto.swift */,
 				A7BE937B2002A4F90047B200 /* ArticleDto.swift */,
+				A7A953FA2005268F00B9004A /* SourceResponseDto.swift */,
+				A7A953FC2005269D00B9004A /* SourceDto.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -190,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B2ECB92003D61B006C0A91 /* ArticleTableViewCell.swift */,
+				A7A953FE2005358400B9004A /* SourceTableViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -328,12 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A953F7200516CB00B9004A /* SourceModelController.swift in Sources */,
 				A7BE937C2002A4F90047B200 /* ArticleDto.swift in Sources */,
+				A7A953FB2005268F00B9004A /* SourceResponseDto.swift in Sources */,
 				A7B2ECBA2003D61B006C0A91 /* ArticleTableViewCell.swift in Sources */,
 				A76C26511FFAC5AE0056DA8F /* Article.swift in Sources */,
 				A74818101FF708790086F5B4 /* Rest.swift in Sources */,
+				A7A953FD2005269D00B9004A /* SourceDto.swift in Sources */,
+				A7A953F5200516B300B9004A /* SourceTableViewController.swift in Sources */,
+				A7A953FF2005358400B9004A /* SourceTableViewCell.swift in Sources */,
 				A7B2ECBC2003D73B006C0A91 /* ArticleTableViewController.swift in Sources */,
 				A76C26531FFAC8B10056DA8F /* ArticleModelController.swift in Sources */,
+				A7A953F9200517D200B9004A /* Source.swift in Sources */,
 				A74817E31FF704CE0086F5B4 /* MainViewController.swift in Sources */,
 				A7985DD9200243F300C8B58B /* ArticlesResponseDto.swift in Sources */,
 				A74817E11FF704CE0086F5B4 /* AppDelegate.swift in Sources */,
