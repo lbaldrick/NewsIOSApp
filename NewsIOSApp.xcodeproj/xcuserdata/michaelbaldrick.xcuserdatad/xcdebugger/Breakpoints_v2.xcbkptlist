@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/Domain/ArticleResponse.swift"
+            timestampString = "536597923.262251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ArticleResponse"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ViewController.swift"
+            timestampString = "537008643.856537"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "makeRequest(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ModelController/ArticleModelController.swift"
+            timestampString = "537186127.988079"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getArticles(completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143561.34298"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1467">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Array&lt;NewsIOSApp.Article&gt; in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143561.3467"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/Client/Rest.swift"
+            timestampString = "537111210.7200789"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "makeRequest(request:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/Client/Rest.swift"
+            timestampString = "537111210.720331"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "makeRequest(request:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/Client/Rest.swift"
+            timestampString = "537111210.7205549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "createRequest(urlString:method:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ModelController/ArticleModelController.swift"
+            timestampString = "537186128.027325"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getArticles(completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.1552939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.157793"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.159578"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.1612819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.1631531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #5 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.164838"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #6 : @autoclosure () throws -&gt; Swift.String in closure #1 (NewsIOSApp.ArticleDto) -&gt; NewsIOSApp.Article in closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in NewsIOSApp.ArticleModelController.getArticles(completionHandler: (Swift.Optional&lt;Swift.Array&lt;NewsIOSApp.Article&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsIOSApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelbaldrick/Dev/Git/NewsIOSApp/NewsIOSApp/ModelController/ArticleModelController.swift"
+                  timestampString = "537143633.1671129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.776907"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.777428"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.777792"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.778142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.778489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.778834"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.779183"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.779525"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.779876"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/ViewController/ArticleTableViewController.swift"
+            timestampString = "537191974.780223"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/CustomCell/ArticleTableViewCell.swift"
+            timestampString = "537191974.780581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "setSelected(_:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/CustomCell/ArticleTableViewCell.swift"
+            timestampString = "537191974.780848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "setSelected(_:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsIOSApp/CustomCell/ArticleTableViewCell.swift"
+            timestampString = "537191974.7810529"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "openUrl(urlStr:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

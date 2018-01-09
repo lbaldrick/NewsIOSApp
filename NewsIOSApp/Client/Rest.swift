@@ -21,28 +21,25 @@ class Rest {
         return request
     }
     
-    private static func makeRequest(request: URLRequest, completion: @escaping (Any?) -> Void) ->  URLSessionDataTask {
-        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-            guard let data = data else {
-                completion(nil)
-                return
-            }
-            guard let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) else {
-                completion(nil)
-                return
-            }
-            
-            completion(json)
-        })
-        
-        return task;
+    private static func makeRequest(request: URLRequest, completion: @escaping (Any?) -> Void) {
+         DispatchQueue.global().async {
+            URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+                guard let data = data else {
+                    print("ERROR: Problem fetching data - \(error!)")
+                    completion(nil)
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    completion((data))
+                }
+            }).resume()
+        }
     }
     
     static func get(url: String, completion: @escaping (Any?) -> Void) {
         let request = createRequest(urlString: url, method: "GET")
-        let task = makeRequest(request: request, completion: completion)
-        
-        task.resume();
+        makeRequest(request: request, completion: completion)
     }
 
 }
