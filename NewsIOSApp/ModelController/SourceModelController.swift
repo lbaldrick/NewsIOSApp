@@ -11,12 +11,15 @@ import UIKit
 
 class SourceModelController {
     
-    var sources: [Source]?
-    var selectedSources: [String]?
+    let dataStore: SourcesDataStore
+    
+    init() {
+        self.dataStore = SourcesDataStore(sources: [], selectedSources: [])
+    }
     
     func getSources(completionHandler: @escaping () -> Void ) {
         
-        if self.sources != nil {
+        if dataStore.sources.count > 0 {
             completionHandler()
         } else {
             fetchSources(completionHandler: completionHandler)
@@ -33,17 +36,34 @@ class SourceModelController {
             do {
                 let jsonDecoder = JSONDecoder()
                 let sourceResponseDto = try jsonDecoder.decode(SourceResponseDto.self, from: jsonData)
-                let sourcesDto: [SourceDto]? = sourceResponseDto.sources
-                self.selectedSources = sourceResponseDto.selectedSources
-                self.sources = sourcesDto?.map({ (sourceDto) -> Source in
+                let sourcesDto: [SourceDto] = sourceResponseDto.sources ?? []
+                self.dataStore.selectedSources = sourceResponseDto.selectedSources ?? []
+                self.dataStore.sources = sourcesDto.map({ (sourceDto) -> Source in
                     Source(id: sourceDto.id ?? "", name: sourceDto.name ?? "", description: sourceDto.description ?? "", category: sourceDto.category ?? "", url: sourceDto.url ?? "")
                 })
-                print(self.sources ?? [])
+                print(self.dataStore.sources)
                 completionHandler()
             } catch {
                 print("ERROR: Problem decoding json")
             }
             
         }
+    }
+    
+    
+    func getSource(index: Int) -> Source {
+        return self.dataStore.sources[index]
+    }
+    
+    func getSourceCount() -> Int {
+        return self.dataStore.sources.count
+    }
+    
+    func setSelectedSource(selectedId: String) {
+        self.dataStore.selectedSources = [selectedId]
+    }
+    
+    func getSelectedSources() -> [String] {
+        return self.dataStore.selectedSources
     }
 }

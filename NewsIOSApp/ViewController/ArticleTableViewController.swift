@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ArticleTableViewController: UITableViewController {
-    
+class ArticleTableViewController: UITableViewController, FilterToggledDelegate {
+   
     let modelController: ArticleModelController
-    var articles: [Article]?
+    
+    var selectedSource: String?
+    
+    @IBOutlet weak var articleTableNavigation: UINavigationItem!
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -22,9 +25,8 @@ class ArticleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
-        
-        modelController.getArticles(completionHandler: { (articles) in
-            self.articles = articles
+        articleTableNavigation.title  = selectedSource ?? "IGN"
+        modelController.getArticles(sourceId: selectedSource, completionHandler: { (articles) in
             self.tableView.reloadData()
         })
     }
@@ -36,7 +38,7 @@ class ArticleTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.articles?.count ?? 0
+        return self.modelController.getArticleCount()
     }
 
 
@@ -47,16 +49,30 @@ class ArticleTableViewController: UITableViewController {
         }
 
         // Fetches the appropriate article for the data source layout.
-        let article = self.articles?[indexPath.row]
+        let article = self.modelController.getArticle(index: indexPath.row)
         
         self.tableView.rowHeight = 120
 
-        cell.titleLabel.text = article?.title
-        cell.publishedAtLabel.text = article?.publishedAt
-        cell.descriptionLabel.text = article?.description
-        cell.newsLink = article?.url
+        cell.titleLabel.text = article.title
+        cell.publishedAtLabel.text = article.publishedAt
+        cell.descriptionLabel.text = article.description
+        cell.newsLink = article.url
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let sourceTableViewController = segue.destination as? SourceTableViewController {
+            sourceTableViewController.delegate = self
+        }
+    }
+    
+    func filterToggled(with id: String) {
+        self.selectedSource = id
+        articleTableNavigation.title  = selectedSource ?? ""
+        modelController.getArticles(sourceId: selectedSource, completionHandler: { (articles) in
+            self.tableView.reloadData()
+        })
     }
 
     /*

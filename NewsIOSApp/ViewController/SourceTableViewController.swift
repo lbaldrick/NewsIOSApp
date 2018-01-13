@@ -13,9 +13,11 @@ class SourceTableViewController: UITableViewController {
     
     let modelController: SourceModelController
     
-    var sources: [Source]?
+    var delegate: FilterToggledDelegate?
     
-    var selectedSources: [String]?
+    func onFilterToggled(id: String) {
+        delegate?.filterToggled(with: id)
+    }
     
     required init?(coder aDecoder: NSCoder) {
         modelController = SourceModelController()
@@ -30,13 +32,12 @@ class SourceTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return modelController.sources?.count ?? 0
+        return self.modelController.getSourceCount()
     }
     
     
@@ -47,13 +48,14 @@ class SourceTableViewController: UITableViewController {
         }
         
         // Fetches the appropriate article for the data source layout.
-        let source = modelController.sources?[indexPath.row]
+        let source = modelController.getSource(index: indexPath.row)
 
-        cell.id = source?.id
-        cell.sourceButton.isOn = (modelController.selectedSources?.contains(cell.id ?? ""))!
-        cell.sourceLabel.text = source?.name
+        cell.id = source.id
+        cell.sourceButton.isOn = modelController.getSelectedSources().contains(cell.id ??  "")
+        cell.sourceLabel.text = source.name
         cell.onStateChange = { (id) in
-            self.modelController.selectedSources = [id]
+            self.modelController.setSelectedSource(selectedId: id)
+            self.onFilterToggled(id: id)
             self.tableView.reloadData()
             print("Switch with id \(id) toggled")
         }

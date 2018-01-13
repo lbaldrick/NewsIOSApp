@@ -107,6 +107,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="articleTableNavigation" destination="5M9-eA-HLt" id="6de-fV-Kxc"/>
                         <outlet property="tableView" destination="GKt-AI-M2W" id="Gnc-AS-JMA"/>
                     </connections>
                 </tableViewController>
